@@ -1,20 +1,23 @@
 {
-    "name": "frontend",
+    "name": "the-royal-books-main",
     "version": "1.0.0",
-    "description": "",
+    "description": "Library Website",
     "main": "index.js",
     "scripts": {
-        "start": "webpack-dev-server --watch-content-base --open",
+        "start": "nodemon --watch backend -exec babel-node backend/server.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
     "license": "ISC",
-    "devDependencies": {
-        "webpack": "^5.65.0",
-        "webpack-cli": "^4.9.1",
-        "webpack-dev-server": "^4.7.2"
-    },
     "dependencies": {
-        "axios": "^0.24.0"
+        "cors": "^2.8.5",
+        "express": "^4.17.2"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.16.7",
+        "@babel/core": "^7.16.7",
+        "@babel/node": "^7.16.7",
+        "@babel/preset-env": "^7.16.7",
+        "nodemon": "^2.0.15"
     }
 }
